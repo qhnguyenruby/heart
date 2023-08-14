@@ -215,13 +215,17 @@
         function pointOnHeart(t) {
           return new Point(
             // heart
-            160 * Math.pow(Math.sin(t), 3),
-            130 * Math.cos(t) -
-              50 * Math.cos(2 * t) -
-              20 * Math.cos(3 * t) -
-              10 * Math.cos(4 * t) +
-              25
-
+            //160 * Math.pow(Math.sin(t), 3),
+            //130 * Math.cos(t) -
+              //50 * Math.cos(2 * t) -
+              //20 * Math.cos(3 * t) -
+              //10 * Math.cos(4 * t) +
+              //25
+              
+            //T
+            100 * Math.cos(t) + 150 * Math.sin(2*t),
+            100 * Math.sin(t) + 150 * Math.cos(2*t)
+            
             // star
 //             150 * Math.cos(4 * t) + 100 * Math.sin(6 * t),
 //             150 * Math.sin(4 * t) + 100 * Math.cos(6 * t)
